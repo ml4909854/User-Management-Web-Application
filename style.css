@@ -1,0 +1,150 @@
+/* Global Reset */
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Heading */
+  .heading {
+    text-align: center;
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+    background-color: darkslategrey;
+  }
+  
+  /* Add Button */
+  .addbtn {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .addbtn > button {
+    padding: 20px 60px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    transition: all 0.4s;
+  }
+  
+  .addbtn > button:hover {
+    background-color: aliceblue;
+    cursor: pointer;
+  }
+  
+  /* Form Container */
+  #formContainer {
+    margin-top: 20px;
+    width: 100vw;
+    text-align: center;
+  }
+  
+  input {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3) inset;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    transition: all 0.4s;
+  }
+  
+  button:hover {
+    background-color: aliceblue;
+    cursor: pointer;
+  }
+  
+  /* User Display List */
+  #userDisplayList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 10px;
+  }
+  
+  .user-card {
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .button-div {
+    display: flex;
+    gap: 20px;
+  }
+  
+  
+  /* For Tablets (up to 768px) */
+  @media (max-width: 768px) {
+    .heading {
+      font-size: 16px;
+    }
+  
+    #formContainer {
+      width: 80%;
+    }
+  
+    input {
+      width: 80%;
+    }
+  
+    #userDisplayList {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  
+    .addbtn > button {
+      font-size: 16px;
+      padding: 15px 40px;
+    }
+  
+    button {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+  
+    .user-card {
+      padding: 15px;
+    }
+  }
+  
+  /* For Mobile Phones (up to 480px) */
+  @media (max-width: 480px) {
+    .heading {
+      font-size: 14px;
+    }
+  
+    #formContainer {
+      width: 90%;
+    }
+  
+    input {
+      width: 90%;
+    }
+  
+    #userDisplayList {
+      grid-template-columns: 1fr; 
+    }
+  
+    .addbtn > button {
+      font-size: 14px;
+      padding: 12px 30px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 6px 12px;
+    }
+  
+    .user-card {
+      padding: 12px;
+    }
+  }
+  

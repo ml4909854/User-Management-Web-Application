@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Users</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="heading">
+            <h1>User Management Dashboard</h1>
+        </div>
+        <div class="addbtn">
+            <button id="AddBtn">Add User</button>
+        </div>
+
+        <div id="formContainer">
+            <form id="userForm">
+                <input type="text" id="firstName" placeholder="First Name" required /><br>
+                <input type="text" id="lastName" placeholder="Last Name" required /><br>
+                <input type="email" id="email" placeholder="Email" required /><br>
+                <input type="text" id="department" placeholder="Department" required /><br>
+                <button type="submit" id="saveButton">Save</button>
+                <button type="button" id="cancelButton">Cancel</button>
+            </form><br>
+        </div>
+
+        <div id="userDisplayList"></div>
+    </section>
+
+    <script src="script.js">
+
+    </script>
+
+</body>
+
+</html>
